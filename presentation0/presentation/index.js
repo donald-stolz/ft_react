@@ -2,27 +2,20 @@
 import React from 'react';
 
 // Import Spectacle Core tags
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  Image,
-  List,
-  ListItem,
-  Notes,
-  Quote,
-  Slide,
-  Text
-} from 'spectacle';
+import { Deck, Heading, List, ListItem, Notes, Slide, Text } from 'spectacle';
+
+// BlockQuote,
+// Cite,
+// Image,
+// Quote,
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
-const images = {
-  formidagon: require('../assets/formidable-logo.svg'),
-  goodWork: require('../assets/good-work.gif')
-};
+// const images = {
+//   formidagon: require('../assets/formidable-logo.svg'),
+//   goodWork: require('../assets/good-work.gif')
+// };
 
 // Require CSS
 require('normalize.css');
@@ -85,29 +78,29 @@ export default class Presentation extends React.Component {
             React is a JavaScript library for building user interfaces
           </Text>
         </Slide>
-
-        <Slide transition={['fade']} bgColor="primary">
-          <Heading size={4} textColor="secondary">
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading size={4} textColor="primary">
             Why should you learn it?
           </Heading>
           <List textColor="tertiary">
             <ListItem>Reusable & Stateful Components</ListItem>
-            <ListItem>MVC</ListItem>
-            <ListItem>All JavaScript</ListItem>
             <ListItem>Created & Mantained by FB</ListItem>
+            <ListItem>Performance</ListItem>
+            <ListItem>All JavaScript</ListItem>
             <ListItem>Learn once, write anywhere</ListItem>
+            <Notes>
+              <ol>
+                <li>
+                  Components maintain their own property and state. Makes it
+                  easy to create reusable components
+                </li>
+                <li>Used on Instagram, Netflix, New York Times</li>
+                <li>React updates and renders just the right components</li>
+                <li>Blank</li>
+                <li>Can be used for Mobile Apps and VR</li>
+              </ol>
+            </Notes>
           </List>
-        </Slide>
-
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite margin="10px 0 0 30px">Author</Cite>
-          </BlockQuote>
-        </Slide>
-        <Slide>
-          <Image src={images.goodWork} width={500} />
-          <Notes>gifs work too</Notes>
         </Slide>
       </Deck>
     );
