@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
+    // TODO: Setup Router
+    // Remove App.css; Move content to home if necessary
     return (
       <div className="App">
         <header className="App-header">
