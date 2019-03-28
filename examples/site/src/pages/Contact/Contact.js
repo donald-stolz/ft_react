@@ -27,7 +27,7 @@ class Contact extends Component {
   render() {
     const { name, email, phone, subject, message } = this.state;
     return (
-      <div className={styles.center}>
+      <div className={`page ${styles.center}`}>
         <h1 className={styles.title}>Contact</h1>
         <form
           className={styles.contactForm}
