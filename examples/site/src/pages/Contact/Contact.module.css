@@ -1,0 +1,46 @@
+.center {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: 40px;
+}
+
+.contactForm {
+  margin-top: 1em;
+  max-width: 400px;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  background-color: white;
+  filter: drop-shadow(1px 1px 3px #7d7d7d);
+  border-radius: 5px;
+}
+
+.inputField {
+  outline: none;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #7d7d7d;
+  width: 100%;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+}
+
+.button {
+  color: white;
+  width: 100%;
+  height: 42px;
+  background-color: navy;
+}
+
+.button:hover {
+  background-color: blue;
+}

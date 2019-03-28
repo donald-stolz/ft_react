@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
+import Layout from './components/Layout';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <Router>
         <Layout>
           <Route path="/" exact component={Home} />
+          <Route path="/contact" component={Contact} />
         </Layout>
       </Router>
     );
