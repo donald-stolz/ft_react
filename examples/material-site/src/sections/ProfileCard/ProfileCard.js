@@ -8,19 +8,8 @@ import MenuIcon from '@material-ui/core/Menu';
 import styles from './Home.module.css';
 import Toolbar from '@material-ui/core/Toolbar';
 
-Home = () => {
-  render() {
-    return (
-      <div>
-        <AppBar position="static">
-          <Toolbar className={styles.NavBar}>
-            <IconButton color="inherit" aria-label="Menu">
-              <MenuIcon />
-            </IconButton>
-            <Button>Login</Button>
-          </Toolbar>
-        </AppBar>
-      </div>
-    );
-  }
-}
+ProfileCard = () => {
+  return <div />;
+};
+
+export default ProfileCard;
