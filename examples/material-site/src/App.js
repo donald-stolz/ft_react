@@ -7,16 +7,20 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 import withRoot from './withRoot';
 import 'typeface-roboto';
+import ProfileCard from './sections/ProfileCard';
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-function App(props) {
+const App = props => {
   const { classes } = props;
   return (
     <>
       <main>
         <HeroImage />
-        <div className={`${classes.layout} ${classes.cardGrid}`}>
-          <Grid container spacing={40}>
+        <div className={classes.layout}>
+          <Grid xs={4} className={classes.profileGrid}>
+            <ProfileCard />
+          </Grid>
+          <Grid xs={8} container spacing={40} className={classes.cardGrid}>
             {cards.map(card => (
               <Card />
             ))}
@@ -25,7 +29,7 @@ function App(props) {
       </main>
     </>
   );
-}
+};
 
 App.propTypes = {
   classes: PropTypes.object.isRequired

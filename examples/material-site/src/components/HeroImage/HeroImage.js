@@ -18,22 +18,10 @@ const HeroImage = props => {
           color="textPrimary"
           gutterBottom
         >
-          Hero Image
+          Donald Stolz
         </Typography>
-        <div className={classes.heroButtons}>
-          <Grid container spacing={16} justify="center">
-            <Grid item>
-              <Button variant="contained" color="primary">
-                Main call to action
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button variant="outlined" color="primary">
-                Secondary action
-              </Button>
-            </Grid>
-          </Grid>
-        </div>
+        <hr />
+        {/* TODO: Social icons */}
       </div>
     </div>
   );
