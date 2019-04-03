@@ -14,7 +14,7 @@ const Card = props => {
   const { classes, image } = props;
 
   return (
-    <Grid item sm={6} md={6} lg={4}>
+    <Grid item sm={6} md={8} lg={6}>
       <MaterialCard className={classes.card}>
         <CardMedia
           className={classes.cardMedia}

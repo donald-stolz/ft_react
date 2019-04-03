@@ -11,13 +11,12 @@ const styles = theme => ({
     }
   },
   profileGrid: {
-    marginRight: 50,
     marginTop: '-20vh'
   },
   cardGrid: {
-    padding: `${theme.spacing.unit * 8}px 0`
-  },
-  row: {}
+    paddingTop: theme.spacing.unit * 6,
+    paddingLeft: theme.spacing.unit * 6
+  }
 });
 
 export default styles;
