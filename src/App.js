@@ -19,7 +19,9 @@ const App = props => {
           <Grid xs={4} className={classes.profileGrid}>
             <ProfileCard />
           </Grid>
-          <Resume />
+          <Grid xs={8} className={classes.resumeGrid}>
+            <Resume />
+          </Grid>
         </div>
       </main>
     </>

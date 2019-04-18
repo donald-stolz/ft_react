@@ -8,42 +8,40 @@ import styles from './styles';
 
 // TODO: Needs to accept array of strings
 const TabBar = props => {
-  const { classes, value, onChange } = props;
+  const { classes, tabs, value, onChange } = props;
 
+  const labels = tabs.map((item, index) => {
+    return <Tab label={item} key={index} />;
+  });
   return (
-    <AppBar position="static" color="default">
-      <Tabs
-        value={value}
-        onChange={(e, val) => {
-          console.log(val);
-
-          onChange(val);
-        }}
-        indicatorColor="primary"
-        textColor="primary"
-        variant="scrollable"
-        scrollButtons="auto"
-      >
-        <Tab label="Item One" />
-        <Tab label="Item Two" />
-        <Tab label="Item Three" />
-        <Tab label="Item Four" />
-        <Tab label="Item Five" />
-      </Tabs>
-    </AppBar>
+    <Tabs
+      value={value}
+      onChange={(event, value) => {
+        onChange(value);
+      }}
+      indicatorColor="primary"
+      textColor="primary"
+      variant="scrollable"
+      scrollButtons="auto"
+      className={classes.tabs}
+    >
+      {labels}
+    </Tabs>
   );
 };
 
 TabBar.propTypes = {
   classes: PropTypes.object.isRequired,
+  tabs: PropTypes.arrayOf(PropTypes.string),
   value: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired
 };
 
 TabBar.defaultProps = {
+  tabs: ['No', 'Tabs'],
   value: 0,
-  onChange: val => {
-    console.log(val);
+  onChange: () => {
+    console.log('Tab bar press');
   }
 };
 
