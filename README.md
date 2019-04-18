@@ -2,6 +2,15 @@
 
 > Currenly a work in progress. ft_react is a student group at 42 focused on learning and improving our react skills. Our hope is to eventually fill this repository with resources and sample projects to help anyone learn or improve their react skills.
 
+## Getting Started
+
+Run the following commands in the root of the repository from the terminal.
+
+```
+yarn
+yarn start
+```
+
 ## Helpful links
 
 ### Getting Started
