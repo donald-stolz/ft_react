@@ -1,6 +1,6 @@
 const styles = theme => ({
   tabs: {
-    overflow: 'hidden'
+    marginLeft: '460px'
   }
 });
 

@@ -1,8 +1,12 @@
 const styles = theme => ({
-  cardGrid: {
+  gridAlign: {
     display: 'flex',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignItems: 'center'
+  },
+  grid: {
+    flexGrow: 1,
+    maxWidth: '96%'
   }
 });
 

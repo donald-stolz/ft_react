@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Select, MenuItem } from '@material-ui/core';
 
 const Menu = props => {
-  const { classes, values, onChange, current } = props;
+  const { classes, values, onChange, current, ...rest } = props;
   const options = values.map((element, idx) => {
     return (
       <MenuItem value={idx} key={idx}>
@@ -22,6 +22,7 @@ const Menu = props => {
       }}
       name="select"
       className={classes.select}
+      {...rest}
     >
       {options}
     </Select>

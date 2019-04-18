@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import styles from './styles';
+import { AppBar } from '@material-ui/core';
 
-// TODO: Needs to accept array of strings
 const TabBar = props => {
   const { classes, tabs, value, onChange } = props;
 
@@ -14,19 +13,22 @@ const TabBar = props => {
     return <Tab label={item} key={index} />;
   });
   return (
-    <Tabs
-      value={value}
-      onChange={(event, value) => {
-        onChange(value);
-      }}
-      indicatorColor="primary"
-      textColor="primary"
-      variant="scrollable"
-      scrollButtons="auto"
-      className={classes.tabs}
-    >
-      {labels}
-    </Tabs>
+    <AppBar position="static" color="default">
+      <Tabs
+        value={value}
+        onChange={(event, value) => {
+          onChange(value);
+        }}
+        indicatorColor="primary"
+        textColor="primary"
+        className={classes.tabs}
+        centered
+        variant="dense"
+        scrollButtons="auto"
+      >
+        {labels}
+      </Tabs>
+    </AppBar>
   );
 };
 

@@ -13,9 +13,8 @@ const styles = theme => ({
   profileGrid: {
     marginTop: '-20vh'
   },
-  cardGrid: {
-    paddingTop: theme.spacing.unit * 6,
-    paddingLeft: theme.spacing.unit * 6
+  resumeGrid: {
+    padding: theme.spacing.unit * 5
   }
 });
 
