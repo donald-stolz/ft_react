@@ -11,7 +11,7 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
 const Card = props => {
-  const { classes, image } = props;
+  const { classes, image, heading, description, onClick } = props;
 
   return (
     <Grid item sm={6} md={8} lg={6}>
@@ -23,12 +23,12 @@ const Card = props => {
         />
         <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2">
-            Heading
+            {heading}
           </Typography>
-          <Typography>This is a media card.</Typography>
+          <Typography>{description}</Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button onClick={onClick} size="small" color="primary">
             View
           </Button>
         </CardActions>
@@ -39,11 +39,20 @@ const Card = props => {
 
 Card.propTypes = {
   classes: PropTypes.object.isRequired,
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 Card.defaultProps = {
-  image: 'http://qsen.org/wp-content/themes/oria/images/placeholder.png'
+  image: 'http://qsen.org/wp-content/themes/oria/images/placeholder.png',
+  heading: 'Heading',
+  description:
+    'This is a useful description about this card! Two to three sentences should be enough.',
+  onClick: () => {
+    console.log('Card button clicked');
+  }
 };
 
 export default withStyles(styles)(Card);

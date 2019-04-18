@@ -1,0 +1,369 @@
+{
+  "basics": {
+    "name": "Donald Stolz",
+    "label": "Software Engineer",
+    "picture": "profilepic.jpg",
+    "email": "DonaldTStolz@gmail.com",
+    "phone": "314-216-0123",
+    "website": "https://donald-stolz.github.io/resume/",
+    "summary": "Donald enjoys new challenges, actively goes outside comfort zone to pursues experiences of diverse cultures, communities, and ideas. Completes tasks in a highly organized manner, with a strong attention detail. Proven ability to coordinate large group efforts through proficient communication skills.",
+    "location": {
+      "address": "6600 Dumbarton Circle",
+      "postalCode": "94555",
+      "city": "Fremont",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Facebook",
+        "username": "dtstolz",
+        "url": "http://facebook.com/dtstolz"
+      },
+      {
+        "network": "Twitter",
+        "username": "donstolz",
+        "url": "https://twitter.com/donstolz"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Donald Stolz",
+        "url": "https://www.linkedin.com/in/donaldstolz"
+      },
+      {
+        "network": "Instagram",
+        "username": "donstolz",
+        "url": "https://www.instagram.com/donstolz/"
+      },
+      {
+        "network": "Github",
+        "username": "donald-stolz",
+        "url": "https://github.com/donald-stolz"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Band Djinni",
+      "image": "bandDjinni-logo.png",
+      "position": "Software Engineer",
+      "website": "http://banddjinni.com/djinn-team/",
+      "startDate": "2018-11-20",
+      "endDate": "2019-03-18",
+      "summary": "We solve the biggest challenges facing the local live music industry by empowering independent artists, SMB venues, and live music lovers everywhere to book shows, fill venues, and generate direct revenue through a blockchain-powered marketplace economy.",
+      "highlights": ["Full stack engineer"]
+    },
+    {
+      "company": "Code for Fun",
+      "image": "cff-logo.png",
+      "position": "Instructor",
+      "website": "http://codeforfun.com",
+      "startDate": "2018-10-20",
+      "endDate": "",
+      "summary": "Code for fun is a non­profit organization, located in the San Francisco Bay Area, committed to exposing all students to computer science at an early age.",
+      "highlights": []
+    },
+    {
+      "company": "Axlry",
+      "image": "axlry-logo.png",
+      "position": "Software Engineer",
+      "website": "http://axlry.com",
+      "startDate": "2018-01-01",
+      "endDate": "",
+      "summary": "Axlry is an app that helps connect independent artists and record labels to music video directors.",
+      "highlights": [
+        "Front-end react-native developer",
+        "Full stack web developer"
+      ]
+    },
+    {
+      "company": "Lake Jericho",
+      "image": "lake-jericho-logo.png",
+      "position": "Financial Technology Intern",
+      "website": "http://lakejericho.com",
+      "startDate": "2017-01-01",
+      "endDate": "2018-05-01",
+      "summary": "In charge of designing and implementing software solutions to assist with customer resource management and meeting Global Investment Performance Standard.",
+      "highlights": [
+        "Created a custom CRM application using Electron, React JS, and NeDB."
+      ]
+    },
+    {
+      "company": "Tau Kappa Epsilon",
+      "image": "tke-logo.jpg",
+      "position": "Historian & Webmaster",
+      "website": "http://tkeloyola.org",
+      "startDate": "2016-08-01",
+      "endDate": "2018-04-01",
+      "summary": "Responsible for improving Alumni involvement, developing chapter website, and coordinating online fundraising.",
+      "highlights": [
+        "Member of Board of Advisors, Executive Board, Philanthropy and Recruitment Committees.",
+        "Assisted with marketing, coordinating social media fundraising and creating event webpages.",
+        "Coordinated and marketed events between alumni and undergraduates.",
+        "Published quarterly newsletters and maintained Alumni Website."
+      ]
+    },
+    {
+      "company": "Midwest Pool Management",
+      "image": "mpm-logo.png",
+      "position": "Assistant Manager / Head Guard",
+      "website": "http://midwestpool.com/",
+      "startDate": "2012-05-01",
+      "endDate": "2016-07-01",
+      "summary": "Responsible for monitoring pool safety and responding to emergency situations.",
+      "highlights": [
+        "Managed 20 guard staff",
+        "resolved patron issues",
+        "performed bi-hourly maintenance checks",
+        "Substituted for Manager when needed"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "St. Jude Children's Research Hospital",
+      "position": "Volunteer",
+      "image": "st-jude-logo.jpg",
+      "website": "https://www.stjude.org/",
+      "startDate": "2016-02-01",
+      "endDate": "2018-05-01",
+      "summary": "The mission of St. Jude Children’s Research Hospital is to advance cures, and means of prevention, for pediatric catastrophic diseases through research and treatment. I coordinated and participated in philanthropic events for St. Jude",
+      "highlights": []
+    },
+    {
+      "organization": "Food Recovery Network",
+      "position": "Volunteer",
+      "image": "frn-logo.jpg",
+      "website": "https://www.foodrecoverynetwork.org/illinois/#loyolauniversityofchicago",
+      "startDate": "2017-01-01",
+      "endDate": "2018-05-01",
+      "summary": "Participated in food recovery runs after campus events, recovering food that can be donated to a local food pantry. Assisted with food drives and helped coordinate volunteers from my fraternity.",
+      "highlights": []
+    },
+    {
+      "organization": "KEEN",
+      "position": "Volunteer",
+      "image": "keen-logo.jpg",
+      "website": "http://www.keenstlouis.org/",
+      "startDate": "2011-09-01",
+      "endDate": "2015-05-01",
+      "summary": "Played sports with mentally and physically disabled kids, mentoring them and building social skills.",
+      "highlights": []
+    },
+    {
+      "organization": "Loyola Academy",
+      "position": "Volunteer",
+      "image": "loyola-academy-logo.jpeg",
+      "website": "http://www.loyolaacademy.org/",
+      "startDate": "2015-01-01",
+      "endDate": "2015-01-30",
+      "summary": "Served as a tutor and teacher’s assistant at Loyola Academy, a Jesuit Middle School for boys who have the potential for college preparatory work, but whose progress may be impeded by economic or social circumstances",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "42 - Silicon Valley",
+      "image": "42-logo.png",
+      "area": " ",
+      "studyType": "Software Engineering ",
+      "startDate": "2018-09-16",
+      "endDate": "",
+      "website": "https://www.42.us.org/",
+      "gpa": "NA",
+      "highlights": [
+        "42 is an innovative engineering and programming college that offers rigorous, industry-leading education in a professional environment."
+      ]
+    },
+    {
+      "institution": "Loyola University Chicago",
+      "image": "loyola-logo.png",
+      "area": "Software Engineering",
+      "studyType": "Bachelors of Science",
+      "startDate": "2016-01-16",
+      "endDate": "2018-05-12",
+      "website": "https://www.luc.edu/",
+      "gpa": "3.48",
+      "highlights": [
+        "3.48 GPA",
+        "Sorority and Fraternity Life - New Member of the Year 2016"
+      ]
+    },
+    {
+      "institution": "St.Louis University High School",
+      "image": "sluh-logo.png",
+      "area": " ",
+      "studyType": "College Preparatory Diploma",
+      "startDate": "2010-08-01",
+      "endDate": "2015-05-01",
+      "website": "https://www.sluh.org/",
+      "gpa": "3.6",
+      "highlights": [
+        "32 ACT Superscore",
+        "Three years National Honor Society",
+        "Two years National AP scholar"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }
+  ],
+  "skills": [
+    {
+      "title": "Application Development",
+      "description": [
+        "Built cross-platform mobile and desktop utilizing the react and react-native libraries."
+      ],
+      "skillDetails": [
+        {
+          "name": "React",
+          "level": "72%",
+          "keywords": ["<KEYWORD_1>"]
+        },
+        {
+          "name": "React Native",
+          "level": "78%",
+          "keywords": ["<KEYWORD_1>"]
+        },
+        {
+          "name": "Electron",
+          "level": "66%",
+          "keywords": ["<KEYWORD_1>"]
+        }
+      ]
+    },
+    {
+      "title": "Programming Languages",
+      "description": [
+        "Experienced in building applications using Javascript and web technologies.",
+        "Have built personal libraries and projects using C.",
+        "Studied object-oriented programming with Java at Loyola.",
+        "Built out metrics and simulations for competitions and research projects using R."
+      ],
+      "skillDetails": [
+        {
+          "name": "Javascript",
+          "level": "83%",
+          "keywords": ["<KEYWORD_1>"]
+        },
+        {
+          "name": "CSS",
+          "level": "75%",
+          "keywords": ["<KEYWORD_1>"]
+        },
+        {
+          "name": "HTML",
+          "level": "70%",
+          "keywords": ["<KEYWORD_1>"]
+        },
+        {
+          "name": "C",
+          "level": "73%",
+          "keywords": ["<KEYWORD_1>"]
+        },
+        {
+          "name": "R",
+          "level": "65%",
+          "keywords": ["<KEYWORD_1>"]
+        },
+        {
+          "name": "Java",
+          "level": "68%",
+          "keywords": ["<KEYWORD_1>"]
+        }
+      ]
+    },
+    {
+      "title": "Leadership",
+      "description": [
+        "Gained leadership experience by achieving my Eagle Scout rank and serving as a member, in multiple positions, of my Fraternity's Executive Board.",
+        "Have been responsible for planning online fundraising multiple years and was in charge of our annual Philanthropy as a Senior."
+      ],
+      "skillDetails": [
+        {
+          "name": "Event Plannig",
+          "level": "80%",
+          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
+        },
+        {
+          "name": "Committee Coordination",
+          "level": "60%",
+          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
+        },
+        {
+          "name": "Task Delegation",
+          "level": "70%",
+          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Native speaker"
+    },
+    {
+      "name": "Spanish",
+      "level": "Proficient"
+    }
+  ],
+  "interests": [
+    {
+      "name": "ToDo",
+      "keywords": ["none"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Nicholas Kimble",
+      "reference": "Don strives for academic excellence, he has invested himself so much in an uncharted area of leadership in TKE by becoming the backbone of our design, PR, and website. Don demonstrates commitment to Loyola, the SFL community, and the future through his voluntarily involvement in the clubs and volunteer programs at Loyola."
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "RIPPEN",
+      "description": "R based scipt providing a new Quarter Back analysis metric.",
+      "image": "nfl-logo.png",
+      "website": "https://github.com/gjm112/RIPPEN"
+    },
+    {
+      "title": "Lake Jericho App",
+      "description": "React & Electron based custom CRM tool.",
+      "image": "lake-jericho.png",
+      "website": "https://github.com/donald-stolz/lake-jericho-app"
+    },
+    {
+      "title": "2017 SABR Analytics Project",
+      "description": "Project submission for 2017 SABR Diamond Dollars Competition.",
+      "image": "sabr-analytics.png",
+      "website": "https://github.com/donald-stolz/Loyola_SABR_2017"
+    },
+    {
+      "title": "42",
+      "description": "My programs and exercises at 42 Silicon Valley",
+      "image": "42-logo.png",
+      "website": "https://github.com/donald-stolz/c-projects-42"
+    },
+    {
+      "title": "Loyola Course Work",
+      "description": "Repositories created for some of the classes I took at Loyola Chicago. Most of the work focuses on Object-Oriented concepts.",
+      "image": "java-logo.png",
+      "website": "https://github.com/DTS-LUC"
+    }
+  ]
+}

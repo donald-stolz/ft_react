@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import HeroImage from './components/HeroImage';
 import TabBar from './components/TabBar';
-import ProfileCard from './sections/ProfileCard';
+import ProfileCard from './components/ProfileCard';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 import withRoot from './withRoot';
 import 'typeface-roboto';
-import Resume from './sections/Resume';
-
+import { Experience } from './sections';
+import resume from './assets/resume.json';
 const sections = [
   'Experience',
   'Portfolio',
@@ -30,8 +30,17 @@ const App = props => {
           <Grid xs={4} className={classes.profileGrid}>
             <ProfileCard />
           </Grid>
-          <Grid xs={8} className={classes.resumeGrid}>
-            <Resume value={section} />
+          <Grid xs={8} className={classes.resumeContainer}>
+            <div className={classes.gridAlign}>
+              <Grid className={classes.resume} xs={8} container spacing={40}>
+                {section === 0 && <Experience experiences={resume.work} />}
+                {/* {value === 0 && cards.map(card => <Card />)}
+                {value === 1 && cards.map(card => <Card />)}
+                {value === 2 && cards.map(card => <Card />)}
+                {value === 3 && cards.map(card => <Card />)}
+                {value === 4 && cards.map(card => <Card />)} */}
+              </Grid>
+            </div>
           </Grid>
         </div>
       </main>
