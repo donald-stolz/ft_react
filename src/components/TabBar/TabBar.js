@@ -6,9 +6,12 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import styles from './styles';
 
-// TODO: Needs to accept array of strings
 const TabBar = props => {
-  const { classes, value, onChange } = props;
+  const { classes, value, onChange, tabs } = props;
+
+  const labels = tabs.map((item, idx) => {
+    return <Tab label={item} key={idx} />;
+  });
 
   return (
     <AppBar position="static" color="default">
@@ -21,14 +24,11 @@ const TabBar = props => {
         }}
         indicatorColor="primary"
         textColor="primary"
-        variant="scrollable"
-        scrollButtons="auto"
+        className={classes.tabs}
+        centered
+        variant="dense"
       >
-        <Tab label="Item One" />
-        <Tab label="Item Two" />
-        <Tab label="Item Three" />
-        <Tab label="Item Four" />
-        <Tab label="Item Five" />
+        {labels}
       </Tabs>
     </AppBar>
   );
@@ -36,11 +36,13 @@ const TabBar = props => {
 
 TabBar.propTypes = {
   classes: PropTypes.object.isRequired,
+  tabs: PropTypes.arrayOf(PropTypes.string).isRequired,
   value: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired
 };
 
 TabBar.defaultProps = {
+  tabs: ['No', 'tabs'],
   value: 0,
   onChange: val => {
     console.log(val);

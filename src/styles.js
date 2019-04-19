@@ -1,4 +1,5 @@
 const styles = theme => ({
+  background: {},
   layout: {
     display: 'flex',
     width: 'auto',
@@ -11,11 +12,19 @@ const styles = theme => ({
     }
   },
   profileGrid: {
-    marginTop: '-20vh'
+    marginTop: -theme.spacing.unit * 22
   },
-  cardGrid: {
-    paddingTop: theme.spacing.unit * 6,
-    paddingLeft: theme.spacing.unit * 6
+  resumeContainer: {
+    padding: theme.spacing.unit * 5
+  },
+  gridAlign: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  resume: {
+    flexGrow: 1,
+    maxWidth: '96%'
   }
 });
 

@@ -11,7 +11,17 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
 const Card = props => {
-  const { classes, image } = props;
+  const {
+    classes,
+    image,
+    heading,
+    description,
+    onClick,
+    startDate,
+    endDate
+  } = props;
+
+  let end = endDate === '' ? 'Present' : endDate;
 
   return (
     <Grid item sm={6} md={8} lg={6}>
@@ -23,16 +33,16 @@ const Card = props => {
         />
         <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2">
-            Heading
+            {heading}
           </Typography>
-          <Typography>This is a media card.</Typography>
+          <Typography variant="subtitle1">
+            {startDate} - {end}
+          </Typography>
+          <Typography>{description}</Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button onClick={onClick} size="small" color="primary">
             View
-          </Button>
-          <Button size="small" color="primary">
-            Edit
           </Button>
         </CardActions>
       </MaterialCard>
@@ -42,11 +52,19 @@ const Card = props => {
 
 Card.propTypes = {
   classes: PropTypes.object.isRequired,
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 Card.defaultProps = {
-  image: 'http://qsen.org/wp-content/themes/oria/images/placeholder.png'
+  image: 'http://qsen.org/wp-content/themes/oria/images/placeholder.png',
+  heading: 'Header',
+  description: 'Lorem Ipsum',
+  onClick: () => {
+    console.log('Portfolio Item Click');
+  }
 };
 
 export default withStyles(styles)(Card);
